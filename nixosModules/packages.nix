@@ -133,9 +133,4 @@
     xorg.libXext
     libglvnd
   ];
-  services.murmur =
-  {
-    enable = true;
-    openFirewall = true;
-  };
 }

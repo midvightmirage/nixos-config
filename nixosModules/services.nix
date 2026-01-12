@@ -28,6 +28,11 @@
     # no need to redefine it in your config for now)
     #media-session.enable = true;
     };
+    murmur =
+      {
+        enable = true;
+        openFirewall = true;
+      };
     };
     security.rtkit.enable = true;
   # SSH Daemon (uncomment if needed)

@@ -1,7 +1,6 @@
 { pkgs, lib, config, ... }:
 
 {
-  # Default Applications
     xdg.mime.defaultApplications =
     {
       "x-scheme-handler/http" = "floorp.desktop";

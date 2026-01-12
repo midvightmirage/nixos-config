@@ -12,7 +12,6 @@
     picom
     adwaita-icon-theme
     ];
-
     programs.bash.enable = true;
     home.stateVersion = "25.11";
 
@@ -25,11 +24,6 @@
               '';
 
       };
-
-
-
-
-
     programs.floorp =
     {
       # Policies configuration - see https://mozilla.github.io/policy-templates/
@@ -56,7 +50,6 @@
         #   id = 1;
         # };
         # containersForce = true;
-
         extensions =
         {
           "adnauseam" = "adnauseam@rednoise.org";
@@ -92,10 +85,10 @@
 
         # Settings - https://home-manager-options.extranix.com/?query=settings --- Create a local homepage project (HTML/CSS/JS) and set browser.startup.homepage to file:///path/
         # Floorp preferences - https://home-manager-options.extranix.com/?query=settings
-        settings =
+        settings.browser =
         {
-          "browser.startup.homepage" = "about:home";
-          "browser.search.defaultenginename" = "DuckDuckGo";
+          "startup.homepage" = "about:home";
+          "search.defaultenginename" = "DuckDuckGo";
         };
 
         # Custom UI CSS - https://home-manager-options.extranix.com/?query=userChrome
