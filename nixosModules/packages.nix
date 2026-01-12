@@ -27,7 +27,8 @@
     vim
     wget
     git
-
+    visualvm
+    jprofiler
 
     libreoffice-qt
     hunspell
