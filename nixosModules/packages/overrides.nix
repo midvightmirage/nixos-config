@@ -37,6 +37,7 @@ in
         (jb.phpstorm.override jetbrainsSettings)
         (jb.mps.override jetbrainsSettings)
         (jb.idea.override jetbrainsSettings)
+        (jb.idea-oss.override jetbrainsSettings)
         (jb.clion.override jetbrainsSettings)
         (jb.goland.override jetbrainsSettings)
         (jb.dataspell.override jetbrainsSettings)

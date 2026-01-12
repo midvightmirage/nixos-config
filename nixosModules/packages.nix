@@ -71,6 +71,7 @@
       jetbrains.phpstorm
       jetbrains.mps
       (jetbrains.plugins.addPlugins pkgs.jetbrains.idea [ "nixidea" ])
+      (jetbrains.plugins.addPlugins pkgs.jetbrains.idea-oss [ "nixidea" ])
       jetbrains.clion
       jetbrains.goland
       jetbrains.dataspell
