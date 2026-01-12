@@ -1,35 +1,23 @@
 { config, pkgs, ... }:
 
 {
-  # Framework 16 Specific Settings
-  services.fprintd.enable = true;
-  services.fwupd.enable = true;
-
-  # Enable the X11 windowing system
-  services.xserver.enable = true;
-  services.xserver.videoDrivers = [ "amdgpu" ];
-
-  # Enable the KDE Plasma Desktop Environment
-  services.displayManager.sddm.enable = true;
-  services.desktopManager.plasma6.enable = true;
-
-  # Configure keymap in X11
-  services.xserver.xkb =
+  services =
+  {
+  fprintd.enable = true;
+  fwupd.enable = true;
+  xserver.enable = true;
+  xserver.videoDrivers = [ "amdgpu" ];
+  displayManager.sddm.enable = true;
+  desktopManager.plasma6.enable = true;
+  xserver.xkb =
   {
     layout = "de";
     variant = "";
   };
-
-  # Touchpad Support (optional, enabled by default in most desktop managers)
-  # services.xserver.libinput.enable = true;
-
-  # Enable CUPS to print documents
+  libinput.enable = true;
   services.printing.enable = true;
-
-  # Enable sound with pipewire
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
-
   services.pipewire =
   {
     enable = true;
@@ -50,4 +38,5 @@
   #   passwordAuthentication = false;
   #   kbdInteractiveAuthentication = false;
   # };
+  };
 }
