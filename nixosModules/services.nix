@@ -12,21 +12,24 @@
     {
       fprintd.enable = true;
       fwupd.enable = true;
-      xserver.enable = true;
-      xserver.videoDrivers = [ "amdgpu" ];
-      displayManager.sddm.enable = true;
-      desktopManager.plasma6.enable = true;
     #
     /* XServer Service */
     xserver =
     {
+      enable = true;
+      videoDrivers = [ "amdgpu" ];
       xkb =
       {
         layout = "de";
         variant = "";
       };
+      #
       libinput.enable = true;
+      displayManager.sddm.enable = true;
+      displayManager.sddm.env = { DRI_PRIME = "1"; };
+      desktopManager.plasma6 = { enable = true; };
     };
+
     #
     printing.enable = true;
     pulseaudio.enable = false;
