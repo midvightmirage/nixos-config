@@ -7,53 +7,52 @@
    */
 
 {
+
     /* Services */
-    services =
-    {
+  services =
+  {
       fprintd.enable = true;
       fwupd.enable = true;
-    #
-    /* XServer Service */
-    xserver =
-    {
-      enable = true;
-      videoDrivers = [ "amdgpu" ];
-      xkb =
+      #
+      /* XServer Service */
+      xserver =
       {
-        layout = "de";
-        variant = "";
+        enable = true;
+        videoDrivers = [ "amdgpu" ];
+        xkb =
+        {
+          layout = "de";
+          variant = "";
+        };
+        #
+        libinput.enable = true;
+        displayManager.sddm.enable = true;
+        desktopManager.plasma6 = { enable = true; };
       };
       #
-      libinput.enable = true;
-      displayManager.sddm.enable = true;
-      displayManager.sddm.env = { DRI_PRIME = "1"; };
-      desktopManager.plasma6 = { enable = true; };
-    };
-
-    #
-    printing.enable = true;
-    pulseaudio.enable = false;
-    #
-    /* Pipewire Service */
-    pipewire =
-    {
-      enable = true;
-      alsa.enable = true;
-      alsa.support32Bit = true;
-      pulse.enable = true;
-      jack.enable = true;
-      # use the example session manager (no others are packaged yet so this is enabled by default,
-      # no need to redefine it in your config for now)
-      #media-session.enable = true;
-    };
-    #
-    /* Mumble Murmur Server */
-    murmur =
-    {
-      enable = true;
-      openFirewall = true;
-    };
-    #
+      printing.enable = true;
+      pulseaudio.enable = false;
+      #
+      /* Pipewire Service */
+      pipewire =
+      {
+        enable = true;
+        alsa.enable = true;
+        alsa.support32Bit = true;
+        pulse.enable = true;
+        jack.enable = true;
+        # use the example session manager (no others are packaged yet so this is enabled by default,
+        # no need to redefine it in your config for now)
+        #media-session.enable = true;
+      };
+      #
+      /* Mumble Murmur Server */
+      murmur =
+      {
+        enable = true;
+        openFirewall = true;
+      };
+      #
     /* SSH Daemon */
  /* services.openssh.enable = true;
   * services.openssh.settings =
@@ -79,6 +78,6 @@
   *   };
   * };
   */
-    };
-    security.rtkit.enable = true;
+  };
+  security.rtkit.enable = true;
 }
