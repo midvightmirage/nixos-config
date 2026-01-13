@@ -8,7 +8,7 @@
 
 {
 
-    /* Services */
+  /* Services */
   services =
   {
       fprintd.enable = true;
