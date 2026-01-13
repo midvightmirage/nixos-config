@@ -1,17 +1,19 @@
 { config, pkgs, ... }:
 
+  /* ./configuration.nix */
+
 {
   imports =
     [
-      (import "${builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-25.11.tar.gz"}/nixos")
       ./hardware-configuration.nix
       ./nixosModules/packages.nix
       ./nixosModules/services.nix
       ./nixosModules/variables.nix
-      #./nixosModules/scripts.nix
+      /* ./nixosModules/scripts.nix */
 
       ./nixosModules/home-manager.nix
     ];
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -19,6 +21,8 @@
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
   time.timeZone = "Europe/Berlin";
+
+/* Locale Settings */
 i18n.extraLocaleSettings =
   let
     locale = "de_DE.UTF-8";
@@ -35,23 +39,29 @@ i18n.extraLocaleSettings =
     LC_TELEPHONE = locale;
     LC_TIME = locale;
   };
+
+  /* User Settings */
   users.users.madeline =
   {
     isNormalUser = true;
     description = "Madeline";
     extraGroups = [ "networkmanager" "wheel" "render" "video"];
   };
+
+  /* NixPKGs Settings */
   nixpkgs.config =
   {
     allowUnfree = true;
     rocmSupport = true;
   };
+
+  /* Hardware Settings */
   hardware.graphics =
   {
     enable = true;
     extraPackages = with pkgs;
     [
-      mesa.opencl # Enables Rusticl (OpenCL) support
+      mesa.opencl
       rocmPackages.clr.icd
     ];
   };

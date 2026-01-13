@@ -1,4 +1,9 @@
 { pkgs, ... }:
+  /*
+   * File Path: ./nixosModules/home-manager.nix --- File Type: Module
+   * ------------------------------------------------------------------
+   * This module installs home-manager and declares it's configuration.
+   */
 
 {
   imports = [ (import "${builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-25.11.tar.gz"}/nixos") ];
@@ -24,7 +29,7 @@
               '';
 
       };
-    programs.floorp =
+    programs.floorp = # Make its own file and make it a declarative config instead of just storing the profile
     {
       # Policies configuration - see https://mozilla.github.io/policy-templates/
       # policies = { };

@@ -1,6 +1,13 @@
 { pkgs, lib, config, ... }:
 
+  /*
+   * File Path: ./nixosModules/packages/default.nix --- File Type: Submodule
+   * -----------------------------------------------------------------------
+   * This module declares the services for the system to install.
+   */
+
 {
+    /* Default Applications */
     xdg.mime.defaultApplications =
     {
       "x-scheme-handler/http" = "floorp.desktop";
