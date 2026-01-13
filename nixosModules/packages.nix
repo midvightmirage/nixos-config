@@ -63,6 +63,7 @@
     /* Security */
     #
     /* Misc/Other */
+    lmstudio
     warp-plus
     /* Misc/Research */
     wireshark
