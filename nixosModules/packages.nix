@@ -25,6 +25,7 @@
     framework-tool
     kdePackages.plasma-integration
     rocmPackages.rocminfo
+    nvtopPackages.amd
     rustup
     clinfo
     btop
