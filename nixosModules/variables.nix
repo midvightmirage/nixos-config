@@ -15,4 +15,5 @@
     IDEA_PROPERTIES = "-Dswing.aatext=true -Dsun.j";
     _JAVA_OPTIONS = "--enable-native-access=ALL-UNNAMED";
   };
+  desktopManager.plasma6.sessionVariables = { DRI_PRIME = "1!"; };
 }
