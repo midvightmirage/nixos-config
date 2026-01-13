@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, services, ... }:
 
   /*
    * File Path: ./nixosModules/variables.nix --- File Type: Module
@@ -15,5 +15,4 @@
     IDEA_PROPERTIES = "-Dswing.aatext=true -Dsun.j";
     _JAVA_OPTIONS = "--enable-native-access=ALL-UNNAMED";
   };
-  desktopManager.plasma6.sessionVariables = { DRI_PRIME = "1!"; };
 }
