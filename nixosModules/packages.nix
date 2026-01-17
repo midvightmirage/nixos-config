@@ -26,6 +26,7 @@
     kdePackages.plasma-integration
     rocmPackages.rocminfo
     nvtopPackages.amd
+    starship
     rustup
     clinfo
     btop
