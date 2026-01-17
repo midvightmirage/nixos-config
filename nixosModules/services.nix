@@ -52,6 +52,11 @@
         enable = true;
         openFirewall = true;
       };
+      emacs = {
+        enable = true;
+        startWithGraphical = true;
+        # defaultEditor = true;
+      };
       #
     /* SSH Daemon */
  /* services.openssh.enable = true;
