@@ -87,7 +87,7 @@
   security.rtkit.enable = true;
 
   /*VirtualBox Configuration*/
-  virtualsation.virtualbox =
+  virtualisation.virtualbox =
   {
     host =
     {
