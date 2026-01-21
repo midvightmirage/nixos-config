@@ -95,12 +95,8 @@
       enableKvm = true;
       enableHardening = true;
       enableWebService = true;
-      # enableExtensionPack = true;
-      # addNetworkInterface = {
-      #   interface = "vboxnet0";
-      #   ip = "192.168.56.1";
-      #   netmask = "24";
-      # };
+      enableExtensionPack = true;
+      addNetworkInterface = false;
     };
     guest =
     {
