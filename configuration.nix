@@ -18,7 +18,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;
-  boot.kernelParams = [ "vm.swappiness=1" ];
+  boot.kernelParams = [ "vm.swappiness=1" "amdgpu.modeset=1" ];
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
   time.timeZone = "Europe/Berlin";

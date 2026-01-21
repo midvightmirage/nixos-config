@@ -45,14 +45,14 @@
         # no need to redefine it in your config for now)
         #media-session.enable = true;
       };
-      #
       /* Mumble Murmur Server */
       murmur =
       {
         enable = true;
         openFirewall = true;
       };
-      emacs = {
+      emacs =
+      {
         enable = true;
         startWithGraphical = true;
         # defaultEditor = true;
@@ -85,4 +85,32 @@
   */
   };
   security.rtkit.enable = true;
+
+  /*VirtualBox Configuration*/
+  virtualsation.virtualbox =
+  {
+    host =
+    {
+      enable = true;
+      enableKvm = true;
+      enableHardening = true;
+      enableWebService = true;
+      # enableExtensionPack = true;
+      # addNetworkInterface = {
+      #   interface = "vboxnet0";
+      #   ip = "192.168.56.1";
+      #   netmask = "24";
+      # };
+    };
+    guest =
+    {
+      enable = true;
+      use3rdPartyModules = true;
+      verbose = true;
+      vboxsf = true;
+      seamless = true;
+      dragAndDrop = true;
+      clipboard = true;
+    };
+  };
 }
