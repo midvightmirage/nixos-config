@@ -36,6 +36,7 @@
     git
     visualvm
     jprofiler
+    pass-wayland
     #
     libreoffice-qt
     hunspell
