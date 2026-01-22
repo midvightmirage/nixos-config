@@ -87,6 +87,7 @@
   security.rtkit.enable = true;
 
   /*VirtualBox Configuration*/
+  /*
   virtualisation.virtualbox =
   {
     host =
@@ -109,4 +110,5 @@
       clipboard = true;
     };
   };
+  */
 }
