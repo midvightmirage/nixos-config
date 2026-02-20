@@ -23,6 +23,7 @@
     #
     # Basic Utilities
     framework-tool
+    wineWowPackages.waylandFull
     kdePackages.plasma-integration
     rocmPackages.rocminfo
     nvtopPackages.amd
@@ -36,7 +37,10 @@
     git
     visualvm
     jprofiler
+    unrar
     #
+    libreoffice-collabora
+    collabora-online
     libreoffice-qt
     hunspell
     hunspellDicts.en_US
@@ -51,10 +55,12 @@
     kdePackages.kate
     floorp-bin
     tor-browser
+    discord
     legcord
     obsidian
     gparted
     thunderbird-esr
+    simplex-chat-desktop
     pidgin
     mumble
     mumble_overlay
@@ -122,7 +128,7 @@
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
       localNetworkGameTransfers.openFirewall = true;
-      extraCompatPackages = [ pkgs.proton-ge-bin ]; # doesnt work
+      # extraCompatPackages = [ pkgs.proton-ge-bin ]; # doesnt work
     };
     wireshark.enable = true;
     java =
@@ -130,7 +136,7 @@
       enable  = true;
       package = pkgs.openjdk21;
     };
-    nix-ld =
+    /*nix-ld =
     {
       enable = true;
       libraries = with pkgs;
@@ -144,6 +150,6 @@
         xorg.libXext
         libglvnd
       ];
-    };
+    };*/
   };
 }
