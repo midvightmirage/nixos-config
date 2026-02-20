@@ -22,6 +22,7 @@
   networking.hostName = "nixos";
   networking.networkmanager.enable = true;
   time.timeZone = "Europe/Berlin";
+  fonts.enableDefaultPackages = true;
 
 /* Locale Settings */
 i18n.extraLocaleSettings =
