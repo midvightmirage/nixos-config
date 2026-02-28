@@ -67,6 +67,7 @@ i18n.extraLocaleSettings =
       rocmPackages.clr.icd
     ];
   };
+  hardware.bluetooth.enable = true;
 
   # System Version
   system.stateVersion = "25.11";
