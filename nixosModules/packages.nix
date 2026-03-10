@@ -105,6 +105,7 @@
     blender
     blockbench
     godot
+    godotPackages_4_6.godot-mono
     # obs
     #
     /* Content Consumption / General */
