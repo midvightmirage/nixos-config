@@ -7,7 +7,7 @@
       vmopts =
         ''
         -Dsun.java2d.uiScale.enabled=true
-        -Dsun.java2d.uiScale=1.35
+        -Dsun.java2d.uiScale=1.15
         -Dswing.aatext=true
         -Xms512m
         -Xmx2048m

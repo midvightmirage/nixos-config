@@ -77,19 +77,19 @@
     #
     /* Programming/Development */
     jetbrains.rider
-    jetbrains.rust-rover
-    jetbrains.ruby-mine
-    jetbrains.pycharm
-    jetbrains.webstorm
-    jetbrains.phpstorm
-    jetbrains.mps
+    #jetbrains.rust-rover
+    #jetbrains.ruby-mine
+    #jetbrains.pycharm
+    #jetbrains.webstorm
+    #jetbrains.phpstorm
+    #jetbrains.mps
     (jetbrains.plugins.addPlugins pkgs.jetbrains.idea [ "nixidea" ])
-    jetbrains.clion
-    jetbrains.goland
-    jetbrains.dataspell
-    jetbrains.datagrip
-    jetbrains.gateway
-    warp-terminal
+    #jetbrains.clion
+    #jetbrains.goland
+    #jetbrains.dataspell
+    #jetbrains.datagrip
+    #jetbrains.gateway
+    #warp-terminal
     vscodium
     #
     #pkgs.winboat
@@ -123,6 +123,11 @@
 
   programs =
   {
+    appimage =
+    {
+    enable = true;
+    binfmt = true;
+    };
     steam =
     {
       enable = true;
