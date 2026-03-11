@@ -13,8 +13,18 @@
 
       ./nixosModules/home-manager.nix
     ];
+  nix =
+  {
+  	settings =
+  	{
+  		cores = 2;
+  		experimental-features = [ "nix-command" "flakes" ];
+  	};
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  	optimise.automatic = true;
+  	optimise.dates = [ "03:45" ]; # Optional; allows customizing optimisation schedule
+  };
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_latest;

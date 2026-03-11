@@ -11,6 +11,8 @@
   /* Services */
   services =
   {
+  	# get yubikey at some point
+  	  fstrim.enable = true;
       fprintd.enable = true;
       fwupd.enable = true;
       #
