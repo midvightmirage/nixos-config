@@ -106,6 +106,7 @@
     blockbench
     godot
     godotPackages_4_6.godot-mono
+    slade
     # obs
     #
     /* Content Consumption / General */
