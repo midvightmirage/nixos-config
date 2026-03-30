@@ -19,6 +19,7 @@
 
   environment.systemPackages = with pkgs;
   [
+    xppen_3
     pkgs.home-manager
     #
     # Basic Utilities
@@ -118,12 +119,14 @@
     r2modman
     protonup-qt
     prismlauncher
+    xonotic
     # thunderbird
     # firefox
   ];
 
   programs =
   {
+    xppen.enable = true;
     appimage =
     {
     enable = true;
