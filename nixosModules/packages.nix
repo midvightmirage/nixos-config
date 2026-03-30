@@ -119,6 +119,7 @@
     r2modman
     protonup-qt
     prismlauncher
+    worldpainter
     xonotic
     # thunderbird
     # firefox
