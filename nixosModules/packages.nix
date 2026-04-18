@@ -56,6 +56,7 @@
     kdePackages.kate
     floorp-bin
     tor-browser
+    vesktop
     discord
     legcord
     obsidian
