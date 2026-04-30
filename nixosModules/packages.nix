@@ -71,30 +71,27 @@
     #
     /* Security */
     #
-    /* Misc/Other */
+    /* Misc */
     lmstudio
-    warp-plus
-    /* Misc/Research */
     wireshark
     #
     /* Programming/Development */
     jetbrains.rider
-    #jetbrains.rust-rover
-    #jetbrains.ruby-mine
-    #jetbrains.pycharm
-    #jetbrains.webstorm
-    #jetbrains.phpstorm
-    #jetbrains.mps
+    jetbrains.rust-rover
+    jetbrains.ruby-mine
+    jetbrains.pycharm
+    jetbrains.webstorm
+    jetbrains.phpstorm
+    jetbrains.mps
     (jetbrains.plugins.addPlugins pkgs.jetbrains.idea [ "nixidea" ])
-    #jetbrains.clion
-    #jetbrains.goland
-    #jetbrains.dataspell
-    #jetbrains.datagrip
-    #jetbrains.gateway
-    #warp-terminal
+    jetbrains.clion
+    jetbrains.goland
+    jetbrains.dataspell
+    jetbrains.datagrip
+    jetbrains.gateway
     vscodium
     #
-    #pkgs.winboat
+    #winboat
     #
     /* Content Creation */
     bitwig-studio
@@ -107,6 +104,7 @@
     blender
     blockbench
     godot
+    godot-mono
     godotPackages_4_6.godot-mono
     slade
     # obs

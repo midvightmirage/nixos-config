@@ -6,7 +6,7 @@
    */
 
 {
-  imports = [ (import "${builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/release-25.11.tar.gz"}/nixos") ];
+  imports = [ (import "${builtins.fetchTarball "https://github.com/nix-community/home-manager/archive/master.tar.gz"}/nixos") ];
 
   home-manager.users.madeline =
   {
@@ -18,7 +18,7 @@
     adwaita-icon-theme
     ];
     programs.bash.enable = true;
-    home.stateVersion = "25.11";
+    home.stateVersion = "26.05";
 
       home.file =
       {
