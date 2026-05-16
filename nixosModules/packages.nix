@@ -76,19 +76,19 @@
     wireshark
     #
     /* Programming/Development */
-    jetbrains.rider
-    jetbrains.rust-rover
-    jetbrains.ruby-mine
-    jetbrains.pycharm
-    jetbrains.webstorm
-    jetbrains.phpstorm
-    jetbrains.mps
-    (jetbrains.plugins.addPlugins pkgs.jetbrains.idea [ "nixidea" ])
-    jetbrains.clion
-    jetbrains.goland
-    jetbrains.dataspell
-    jetbrains.datagrip
-    jetbrains.gateway
+    # jetbrains.rider
+    # jetbrains.rust-rover
+    # jetbrains.ruby-mine
+    # jetbrains.pycharm
+    # jetbrains.webstorm
+    # jetbrains.phpstorm
+    # jetbrains.mps
+    jetbrains.idea
+    # jetbrains.clion
+    # jetbrains.goland
+    # jetbrains.dataspell
+    # jetbrains.datagrip
+    # jetbrains.gateway
     vscodium
     #
     #winboat
@@ -109,10 +109,9 @@
     slade
     # obs
     #
-    /* Content Consumption / General */
-    /* Music */
-    # music app here
-    /* Games */
+    /* Content */
+	# music app here
+    koodo-reader
     steam
     adwsteamgtk
     r2modman
@@ -120,6 +119,7 @@
     prismlauncher
     worldpainter
     xonotic
+    supertux
     # thunderbird
     # firefox
   ];
