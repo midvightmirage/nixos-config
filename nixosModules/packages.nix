@@ -120,8 +120,21 @@
     worldpainter
     xonotic
     supertux
+    supertuxkart
+    ryubing
+    eden
+    cemu
+    snes9x
+    #bottles
+    #lutris
     # thunderbird
     # firefox
+    syncthing
+    ghidra
+    handbrake
+    (callPackage ./packages/vanilla/default.nix { })
+    android-tools
+    usbutils
   ];
 
   programs =
