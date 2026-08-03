@@ -151,7 +151,7 @@
       remotePlay.openFirewall = true;
       dedicatedServer.openFirewall = true;
       localNetworkGameTransfers.openFirewall = true;
-      # extraCompatPackages = [ pkgs.proton-ge-bin ]; # doesnt work
+      extraCompatPackages = [ pkgs.proton-ge-bin ]; # doesnt work
     };
     wireshark.enable = true;
     java =
